@@ -144,16 +144,50 @@
   }
    @media screen and (max-width: 400px)
    {
-   	.con
-   	{
-   			
-   	}
+       @media screen and (max-width: 411px)
+   {
+      #bgimg h3
+	{
+		
+		font-size: 47px !important;
+	}
+	#bgimg h5
+	{
+		position: relative;
+		right:50px;
+	}
+	#bgimg
+	{
+		height: 75vh !important;
+		background-size: 100% 100%;
+	}
+	#webdeve
+	{
+		font-size: 10px !important;
+	}
+	#imge
+	{
+      margin-top: 20px;
+	}
+	#contain button
+	{
+		position: relative;
+		left:110px !important;
+		width:150px !important;
+	}
+	#btnoo
+	{
+		position: absolute;left:0px;
+		
+	}
+	#form
+	{
+		width:420px !important;
+	}
+   
 
-   	nav
-   	{
-   		
-   	}
-   }
+   }	
+   
 </style>
 </head>
 <body>
@@ -205,7 +239,23 @@
 
 	</div>
 </div>
+<div style="background: white;width: 100%;margin: auto;position: absolute;top:80px;height: 0px;transition: height 0.5s" id="bge">
+	<ul style="width: 50%;margin: auto;display: none;" id="navb">
+		<li style="list-style-type: none;margin-top: 10px" class="one"><a href="" style="list-style-type: none;text-decoration: none;color: black">Home</a></li>
+		 <span class="hov2"></span>
+		<li style="list-style-type: none;margin-top: 10px" id="one"><a href="#about" style="list-style-type: none;text-decoration: none;color: black">About</a></li>
+		 <span class="hov"></span>
+		<li style="list-style-type: none;margin-top: 10px"><a href="#skill" style="list-style-type: none;text-decoration: none;color: black">Skill</a></li>
+		 <span class="hov"></span>
+		<li style="list-style-type: none;margin-top: 10px"><a href="#con" style="list-style-type: none;text-decoration: none;color: black">Contact</a></li>
+		 <span class="hov"></span>
+		<li style="list-style-type: none;margin-top: 10px"><a href="#port" style="list-style-type: none;text-decoration: none;color: black">Portfolio</a></li>
+		 <span class="hov"></span>
+		<li style="list-style-type: none;margin-top: 10px"><a href="" style="list-style-type: none;text-decoration: none;color: black">Login</a></li>
+		 <span class="hov"></span>
 
+	</ul>
+</div>
 </section>
 <section class="mt-4" id="about">
 	<a name="about"><h3 class="text-center">About_me</h3></a>
@@ -389,5 +439,20 @@
 			  document.documentElement.scrollTop = 0
 			
 		})
+		$('.navbar-toggler-icon').click(function(){
+		var ul=document.getElementById('navb');
+		if(ul.style.display=='none')
+		{
+			$('#bge').css("height","230px");
+		   $('#navb').show();
+		}
+		else
+		{
+			 $('#navb').hide();
+			$('#bge').css("height","0px");
+		   
+		}
+
+	})
 	})
 </script>
