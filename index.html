@@ -4,8 +4,7 @@
 	<title></title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="../bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
   <link
     rel="stylesheet"
@@ -40,7 +39,7 @@
 		width:0px;
 		transition:  width 0.5s;
 	}
-	
+
 	#one:hover .hov
 	{
 		width:50px;
@@ -59,12 +58,7 @@
 		box-shadow: 2px 2px 3px 2px darkgrey;
 		outline-color: none !important;
 	}
-	button:hover
-	{
-		background: #dc3545;
-		color:white !important;
-		box-shadow: none;
-	}
+	
 	#bgimg
 	{
 		background-image: url('intro/1.jpg');
@@ -75,23 +69,10 @@
 	}
 	#bgimg h3
 	{
-		animation: tex 3s infinite;
+		
 		font-size: 60px !important;
 	}
-	@keyframes tex{
-
-     0%
-     {
-     	transform: scaley(1,2);
-
-     }
-    
-
-     100%
-     {
-     	transform: scaley(2,2);
-     }
-	}
+	
 	@keyframes anim{
 
      0%
@@ -144,8 +125,6 @@
   }
    @media screen and (max-width: 400px)
    {
-       @media screen and (max-width: 411px)
-   {
       #bgimg h3
 	{
 		
@@ -178,7 +157,7 @@
 	#btnoo
 	{
 		position: absolute;left:0px;
-		
+
 	}
 	#form
 	{
@@ -186,12 +165,11 @@
 	}
    
 
-   }	
-   
+   }
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light w-100">
   <a class="navbar-brand img-fluid text-danger ml-5 mt-3" href="#" id="logo"><h3>webDev</h3></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -226,7 +204,7 @@
       </li>
       
     </ul>
-     <button class="btn ml-4 text-dark mr-2">Hello,Guest</button>
+     <button class="btn ml-4 text-dark mr-2" id="btnoo">Hello,Guest</button>
   </div>
 </nav>
 
@@ -235,7 +213,7 @@
 <div id="bgimg">
 	<div class="con">
 	<h3 class="text-white text-uppercase" style="color: #f8f9fa">Hey!&nbsp;i'm Ahmad</h3>
-	<h5 class="text-white text-uppercase mt-3" style="padding-left:100px;font-size: 16px !important">As&nbsp;a<span  style="font-size: 21px !important;position: relative;left:7px" class="text-white bg-danger px-3 py-1" style="border-radius: 10px !important;">web developer</span></h5>
+	<h5 class="text-white text-uppercase mt-3" style="padding-left:100px;font-size: 16px !important">As&nbsp;a<span  style="font-size: 21px !important;position: relative;left:7px" class="text-white bg-danger px-3 py-1" style="border-radius: 10px !important;" id="webdeve">web developer</span></h5>
 
 	</div>
 </div>
@@ -266,7 +244,7 @@
 			<div id="contain" style="visibility: hidden">
 			<p style="word-break:break-all;margin-left:10px;line-height: 25px;font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.culpa qui ofeddefrficedefwfia deseruneeedt mollit anisswdwef45yurfefem id est laborum.
 			</p>
-			<button class="btn bg-primary text-white pt-2" style=";position:relative;left:10px"><h6>Contact_us</h6></button>
+			<button class="btn bg-primary text-white pt-2" style="position:relative;left:10px"><h6>Contact_us</h6></button>
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-12 col-sm-12">
@@ -340,21 +318,21 @@
 		<img src="stop.png" style="width:400px;height: 220px">
 	</div>
 	<div style="display: inline-block;" class="dive mx-2" id="d1">
-		<img src="nahua.png" >
+		<img src="nahua.png" width="100%">
 	</div>
 	<div style="display: inline-block;" class="dive mx-2" id="d2">
-		<img src="ecommercewebsite.png" >
+		<img src="ecommercewebsite.png" width="100%">
 	</div>
 	<div style="display: inline-block;margin-top:10px" class="dive mx-2" id="d3">
-		<img src="billing.png" >
+		<img src="billing.png" width="100%">
 	</div>
 	
 	<div style="display: inline-block;margin-top:10px" class="dive mx-2" id="d4">
-		<img src="loginsy.png" >
+		<img src="loginsy.png" width="100%">
 	</div>
 	
 	<div style="display: inline-block;margin-top:10px" class="dive mx-2" id="d5">
-		<img src="carracing.png" >
+		<img src="carracing.png" width="100%">
 	</div>
 	</div>
 </section>
@@ -363,7 +341,7 @@
 	<span style="border-bottom:2px solid red;width:15%;display: block;margin:auto"></span>
 	<div class="w-100 mt-4">
 		
-	  <div class="w-75 mx-auto">
+	  <div class=" mx-auto " style="width: 1100px" id="form">
 	  	<p style="font-size: 28px;line-height: 15px" class="text-center mt-5">Get in touch</p>
 	  	<h6 class="text-center">Please fill the field to connect with us</h6>
 	  	<form class="form-group w-75 mx-auto" style="visibility: hidden">
@@ -438,8 +416,9 @@
 			
 			  document.documentElement.scrollTop = 0
 			
-		})
-		$('.navbar-toggler-icon').click(function(){
+		})		
+	})
+	$('.navbar-toggler-icon').click(function(){
 		var ul=document.getElementById('navb');
 		if(ul.style.display=='none')
 		{
@@ -453,6 +432,5 @@
 		   
 		}
 
-	})
 	})
 </script>
