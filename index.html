@@ -4,7 +4,7 @@
 	<title></title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="../bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
   <link
     rel="stylesheet"
@@ -66,6 +66,7 @@
 		width: 100%;
 		height: 87vh;
 		animation: anim 6s infinite;
+		background-size: 100% 100%;
 	}
 	#bgimg h3
 	{
@@ -113,17 +114,15 @@
    		visibility:hidden;
    		border-radius: :10px;
    }
-  .dive:hover
-  {
-  	box-shadow: 2px 2px 5px 4px darkgrey;
-  	border-color:none;
-
-  }
+  
   .dive
   {
   	visibility: hidden;
+  	box-shadow: 2px 2px 5px 4px lightgrey;
+
   }
-   @media screen and (max-width: 480px)
+  
+   @media screen and (max-width: 400px)
    {
       #bgimg h3
 	{
@@ -137,38 +136,40 @@
 	}
 	#bgimg
 	{
-		height: 65vh !important;
-		background-size: 100% 100%;
-		width:100vw;
+		height: 75vh !important;
+		
 	}
 	#webdeve
 	{
 		font-size: 10px !important;
 	}
-	#imge
+	#img1
 	{
-           margin-top: 20px;
+		width:384px !important;
 	}
+	
 	#contain button
 	{
-		position: relative;
-		left:110px !important;
 		width:150px !important;
+		margin: auto;
+		margin-bottom:20px;
 	}
 	#btnoo
 	{
 		position: absolute;left:0px;
 
 	}
-	#form
+	#thoughts
 	{
-		width:420px !important;
+		font-size: 18px !important;
 	}
-       #thoughts
-	{
-		font-size: 17px !important;
-	}
-
+   
+   #navb
+   {
+   	position: relative;
+   	left:40px;
+   }
+   
    }
 </style>
 </head>
@@ -214,6 +215,7 @@
 
 <section id="sec">
 	<i class='fas fa-arrow-up'id="arrow" style='font-size:30px;background: black;color:white;border-radius: 23%;padding: 5px;position: fixed;right:10px;top:600px;cursor: pointer;display: none;z-index: 9999;'></i>
+
 <div id="bgimg">
 	<div class="con">
 	<h3 class="text-white text-uppercase" style="color: #f8f9fa">Hey!&nbsp;i'm Ahmad</h3>
@@ -223,17 +225,19 @@
 </div>
 <div style="background: white;width: 100%;margin: auto;position: absolute;top:80px;height: 0px;transition: height 0.5s" id="bge">
 	<ul style="width: 50%;margin: auto;display: none;" id="navb">
-		<li style="list-style-type: none;margin-top: 10px" class="one"><a href="" style="list-style-type: none;text-decoration: none;color: black">Home</a></li>
-		 <span class="hov2"></span>
-		<li style="list-style-type: none;margin-top: 10px" id="one"><a href="#about" style="list-style-type: none;text-decoration: none;color: black">About</a></li>
+		<li style="list-style-type: none;margin-top: 10px" class="one"><a href="" style="list-style-type: none;text-decoration: none;color: black" >Home</a>
+			<span class="hov2"></span>
+		</li>
+		 
+		<li style="list-style-type: none;margin-top: 10px" class="one"><a href="#about" style="list-style-type: none;text-decoration: none;color: black">About</a></li>
 		 <span class="hov"></span>
-		<li style="list-style-type: none;margin-top: 10px"><a href="#skill" style="list-style-type: none;text-decoration: none;color: black">Skill</a></li>
+		<li style="list-style-type: none;margin-top: 10px" id class="one"><a href="#skill" style="list-style-type: none;text-decoration: none;color: black">Skill</a></li>
 		 <span class="hov"></span>
-		<li style="list-style-type: none;margin-top: 10px"><a href="#con" style="list-style-type: none;text-decoration: none;color: black">Contact</a></li>
+		<li style="list-style-type: none;margin-top: 10px" id="one"><a href="#con" style="list-style-type: none;text-decoration: none;color: black">Contact</a></li>
 		 <span class="hov"></span>
-		<li style="list-style-type: none;margin-top: 10px"><a href="#port" style="list-style-type: none;text-decoration: none;color: black">Portfolio</a></li>
+		<li style="list-style-type: none;margin-top: 10px" id="two"><a href="#port" style="list-style-type: none;text-decoration: none;color: black">Portfolio</a></li>
 		 <span class="hov"></span>
-		<li style="list-style-type: none;margin-top: 10px"><a href="" style="list-style-type: none;text-decoration: none;color: black">Login</a></li>
+		<li style="list-style-type: none;margin-top: 10px" id="two"><a href="" style="list-style-type: none;text-decoration: none;color: black">Login</a></li>
 		 <span class="hov"></span>
 
 	</ul>
@@ -242,18 +246,20 @@
 <section class="mt-4" id="about">
 	<a name="about"><h3 class="text-center">About_me</h3></a>
 	<span style="border-bottom:2px solid red;width:15%;display: block;margin:auto"></span>
-	<div class=" container">
+	<div class="container">
 	<div class="row mt-5">
 		<div class="col-lg-6 col-md-12 col-sm-12">
 			<div id="contain" style="visibility: hidden">
 			<p style="word-break:break-all;margin-left:10px;line-height: 25px;font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.culpa qui ofeddefrficedefwfia deseruneeedt mollit anisswdwef45yurfefem id est laborum.
 			</p>
-			<button class="btn bg-primary text-white pt-2" style="position:relative;left:10px"><h6>Contact_us</h6></button>
+			<div class="w-100 ">
+				<button class="btn bg-primary text-white pt-2 d-block" ><h6><a href="#con" class="text-white" style="text-decoration: none;">Contact_us</a></h6></button>
+			</div>
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-12 col-sm-12">
-			<div>
-			  <img id="imge" src="man.jpg" class="img-fluid" style="width:430px;visibility: hidden;height: auto;border-radius: 20px">
+			<div class="w-100 ">
+			  <img id="imge" src="man.jpg" class="img-fluid mx-auto" style="width:430px;display: block;visibility: hidden;height: auto;border-radius: 20px">
 			</div>
 		</div>
 	</div>
@@ -319,7 +325,7 @@
 	<span style="border-bottom:2px solid red;width:15%;display: block;margin:auto"></span>
 	<div style="display: flex;flex-wrap: wrap;margin-top: 40px">
 		<div style="display: inline-block;" class="dive mx-2" id="d0">
-		<img src="stop.png" style="width:400px;height: 220px">
+		<img src="stop.png" style="width:400px;height: 220px" id="img1">
 	</div>
 	<div style="display: inline-block;" class="dive mx-2" id="d1">
 		<img src="nahua.png" width="100%">
@@ -421,7 +427,7 @@
 			  document.documentElement.scrollTop = 0
 			
 		})		
-	
+	})
 	$('.navbar-toggler-icon').click(function(){
 		var ul=document.getElementById('navb');
 		if(ul.style.display=='none')
@@ -435,8 +441,10 @@
 			$('#bge').css("height","0px");
 		   
 		}
-
-	})
-
+   $('#bgimg').click(() =>
+   {
+   	   $('#navb').hide();
+	   $('#bge').css("height","0px");
+   })
 	})
 </script>
