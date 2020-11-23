@@ -20,6 +20,17 @@
 	{
 		//font-family: 'Space Grotesk', sans-serif;
 	}
+		#loader
+		{
+			 width:100%;
+		    height: 100vh;
+			background: white url(loader.gif);
+			background-repeat: no-repeat;
+			background-position: center;
+		    position: fixed;
+                   z-index: 9999;
+
+		}
 	#logo
 	{
 		font-family: 'Space Grotesk', sans-serif;
@@ -178,7 +189,8 @@
    }
 </style>
 </head>
-<body>
+<body onload="run1()">
+	<div id="loader"></div>
 <nav class="navbar navbar-expand-lg navbar-light w-100">
   <a class="navbar-brand img-fluid text-danger ml-5 mt-3" href="#" id="logo"><h3>webDev</h3></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -452,4 +464,8 @@
 	   $('#bge').css("height","0px");
    })
 	})
+	run1 = () =>
+	{
+        document.getElementById('loader').style.display="none"
+	}
 </script>
